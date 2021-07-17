@@ -106,6 +106,14 @@ nav {
 
 .row {
     display: flex;
+}
+
+.row .mob-row:last-of-type {
+    margin-left: 50px;
+}
+
+.mob-row {
+    display: flex;
     justify-content: space-between;
 }
 
@@ -115,7 +123,7 @@ nav {
 }
 
 .goal-list img {
-    width: 150px;
+    width: 20%;
     margin-bottom: 30px;
 }
 
@@ -123,7 +131,7 @@ nav {
 
 .library {
     background-color: white;
-    padding: 20px 30px;
+    padding: 20px 50px 20px 0px;
 }
 
 .library h1{
@@ -131,9 +139,14 @@ nav {
     text-align: center;
 }
 
-.books {
+/* .shelve {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 50px;
+} */
+
+.books {
+    text-align: center;
 }
 
 .book img,
@@ -145,6 +158,9 @@ nav {
 .book {
     position: relative;
     background-color: black;
+    display: inline-block;
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 
 .caption {
@@ -169,5 +185,43 @@ nav {
 }
 
 .book:hover img{
-    opacity: 70%;
+    opacity: 60%;
+}
+
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 1210px) {
+    .goals {
+        padding: 0px 30px;
+    }
+
+    .row {
+        display: block;
+    }
+
+    .row .mob-row:last-of-type {
+        margin: 0;
+    }
+
+    .goal-list img{
+        width: 20%
+    }
+}
+
+@media (max-width: 1000px) {
+    .goals h1 {
+        font-size: 6.5em;
+    }
+}
+
+@media (max-width: 800px) {
+    .description {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 500px){
+    .goal-list img {
+        width: 25%;
+    }
 }
